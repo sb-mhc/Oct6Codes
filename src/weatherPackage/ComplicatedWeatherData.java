@@ -35,5 +35,6 @@ public class ComplicatedWeatherData {
 	
 	public static void main(String[] args) {
 		
+		ComplicatedWeatherData cwd = new ComplicatedWeatherData(99, 56, 780);
 	}
 }
