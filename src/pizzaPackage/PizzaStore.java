@@ -2,11 +2,18 @@ package pizzaPackage;
 
 public class PizzaStore {
 	
-	public void orderPizza(){
+	PizzaFactory mypf;
+	
+	PizzaStore(PizzaFactory pf){
+		mypf = pf;
+	}
+	
+	public Pizza orderPizza(String type){
 		
-		Pizza pizza = new Pizza();
-		pizza.createPizza();
+		Pizza pizza = mypf.createPizza(type);
+		
 		pizza.bakePizza();
 		pizza.boxPizza();
+		return pizza;
 	}
 }

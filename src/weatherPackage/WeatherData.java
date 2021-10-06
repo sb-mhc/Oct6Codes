@@ -35,6 +35,7 @@ public class WeatherData implements Subject {
 	
 	public void addObserver(Observer o) {
 		o_list.add(o);
+		o.update(temp, hum, prsr);
 	}
 	
 	public void removeObserver(Observer o) {

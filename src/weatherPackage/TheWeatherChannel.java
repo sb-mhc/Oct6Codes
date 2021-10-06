@@ -13,6 +13,11 @@ public class TheWeatherChannel implements Observer {
 	}
 	
 	public void show() {
+		System.out.println("\n-----------  The Weather Channel ----------- ");
+		System.out.println("~~~~~~~~~~~ Temp:" + temp + " ~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~ Humidity:" + hum + " ~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~ Pressure:" + prsr +" ~~~~~~~~~~~~");
+
 		
 	}
 }

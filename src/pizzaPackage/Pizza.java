@@ -1,6 +1,6 @@
 package pizzaPackage;
 
-public class Pizza {
+public abstract class Pizza {
 
 	public void createPizza() {
 		System.out.println("Creating the pizza");

@@ -9,6 +9,9 @@ public class ComplicatedWeatherData {
 	int hum;
 	int prsr;
 	
+	AccuWeather aw;
+	TheWeatherChannel awc;
+	
 	
 	ComplicatedWeatherData(int t, int h, int p) {
 		temp = t;
@@ -30,6 +33,8 @@ public class ComplicatedWeatherData {
 	}
 	
 	void displayWeather() {
+		aw.update(temp, hum, prsr);
+		awc.update(temp, hum, prsr);
 		
 	}
 	
